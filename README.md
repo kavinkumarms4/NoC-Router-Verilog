@@ -37,26 +37,6 @@ The router uses XY routing, where:
 
 This approach is simple, deadlock-free, and deterministic.
 
-## Directory Structure
-
-noc-router/
-├── src/
-│   ├── router.v        # Top-level router module
-│   └── fifo.v          # Parameterized FIFO buffer
-│
-├── tb/
-│   └── router_tb.v     # Functional testbench with stimuli
-│
-├── doc/
-│   └── diagram.png     # Optional: Router architecture diagram
-│
-├── waveform/
-│   └── sim_wave.png    # Optional: Vivado simulation waveform
-│
-├── README.md           # Project documentation
-├── LICENSE             # Open-source license (MIT recommended)
-└── .gitignore          # Version control exclusions
-
 ## Testbench
 
 A simple testbench is provided to simulate and verify the router behavior. It feeds packets to the Local port with various destination coordinates and observes routing toward East, North, etc.
